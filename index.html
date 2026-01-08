@@ -414,23 +414,11 @@
   </form>
   <!-- ===== Custom Login Alert ===== -->
 <div id="loginAlert" class="custom-alert">
-  <p>This says: You are logged in</p>
+  <p>This page says: You are logged in</p>
   <button onclick="closeAlert()">OK</button>
 </div>
 
 </section>
-    
-
-    <script>
-  function loginAlert() {
-    alert("This says: You are logged in.");
-  }
-
-  function registerAlert() {
-    alert("Nairobi Clothing Co. says: Account created successfully. You are now registered.");
-  }
-</script>
-
 
    <!-- ================= SIGN UP ================= -->
 <section id="signup" class="signup">
@@ -513,13 +501,38 @@
     
 
   </div>
+    </div>
+  <!-- ===== Custom Register Alert ===== -->
+<div id="registerAlert" class="custom-alert">
+  <p>This page says: Account created successfully.</p>
+  <button onclick="closeRegisterAlert()">OK</button>
+</div>
 </section>
 
 
   </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-   
+   <script>
+  /* ================= LOGIN ALERT ================= */
+  function loginAlert() {
+    document.getElementById("loginAlert").style.display = "block";
+  }
+
+  function closeAlert() {
+    document.getElementById("loginAlert").style.display = "none";
+  }
+
+  function registerAlert() {
+    document.getElementById("registerAlert").style.display = "block";
+  }
+
+  function closeRegisterAlert() {
+    document.getElementById("registerAlert").style.display = "none";
+  }
+
+
+</script>
 
    <!-- ================= CONTACT ================= -->
 <h2 class="section-title">Contact Us</h2>
