@@ -492,7 +492,7 @@ setInterval(updateFlashTimer, 60000);
  
 
   /* ================= REGISTER ALERT ================= */
-  /* Custom login alert */
+  /* Login Alert */
   function loginAlert() {
     // Show custom alert instead of browser alert
     document.getElementById("loginAlert").style.display = "block";
@@ -501,8 +501,17 @@ setInterval(updateFlashTimer, 60000);
   function closeAlert() {
     document.getElementById("loginAlert").style.display = "none";
   }
-  
   function registerAlert() {
+
+    document.getElementById("registerAlert").style.display = "block";
+  }
+
+  function closeRegisterAlert() {
+    document.getElementById("registerAlert").style.display = "none";
+  }
+
+  /* Signup Alert */
+  function signupAlert() {
     const username = document.getElementById("username").value.trim();
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
