@@ -412,21 +412,22 @@
 
     <button type="submit" class="login-btn">Login</button>
   </form>
-</section>
-    
-<!-- ===== Custom Login Alert ===== -->
+  <!-- ===== Custom Login Alert ===== -->
 <div id="loginAlert" class="custom-alert">
   <p>This says: You are logged in</p>
   <button onclick="closeAlert()">OK</button>
 </div>
-<script>
-   function loginAlert() {
-    // Show custom alert instead of browser alert
-    document.getElementById("loginAlert").style.display = "block";
+
+</section>
+    
+
+    <script>
+  function loginAlert() {
+    alert("This says: You are logged in.");
   }
 
-  function closeAlert() {
-    document.getElementById("loginAlert").style.display = "none";
+  function registerAlert() {
+    alert("Nairobi Clothing Co. says: Account created successfully. You are now registered.");
   }
 </script>
 
