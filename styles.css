@@ -358,10 +358,11 @@ html {
   background: #f8c100;
   color:#000;
   margin-top: 20px;
+  text-align: center;
 
 }
 .btn:hover {
-  background: #e0b000;
+  background: #000;
 }
 
 .primary {
