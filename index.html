@@ -419,7 +419,16 @@
   <p>This says: You are logged in</p>
   <button onclick="closeAlert()">OK</button>
 </div>
+<script>
+   function loginAlert() {
+    // Show custom alert instead of browser alert
+    document.getElementById("loginAlert").style.display = "block";
+  }
 
+  function closeAlert() {
+    document.getElementById("loginAlert").style.display = "none";
+  }
+</script>
 
 
    <!-- ================= SIGN UP ================= -->
