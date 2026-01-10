@@ -26,7 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleMenu() {
   const nav = document.getElementById("navLinks");
   nav.classList.toggle("open");
+  document.getElementById("navLinks").classList.toggle("open");
+  
 }
+ 
+    
 /*Close menu when a link is clicked (for mobile)*/
 document.querySelectorAll("#navLinks a").forEach(link => {
   link.addEventListener("click", () => {
